@@ -4,7 +4,7 @@ function qsort( data, compare, change ){
         f_change  = change;
  	
  	// Данные не являются массивом
-    if ( !a instanceof Array ){
+    if ({}.toString.call(a) == '[object Array]') {
         return undefined;
     };
     	// Будем использовать простую функцию (для чисел)
